@@ -15,6 +15,7 @@ g++ main.cpp -o setup<br/>
 ./setup<br/>
 # Warning!<br/>
 Tor should not be blocked in your country.<br/>
+By using this software, you agree that all responsibility is yours.<br/>
 <hr/>
 <br/>
 Copyright 2020 0rbianta
