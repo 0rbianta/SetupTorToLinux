@@ -5,7 +5,7 @@ Setup Tor Browser to Linux fast and easier.<br/>
  *g++<br/>
  *Linux<br/>
  *Internet<br/>
-# How to compile cpp file?<br/>
+# How to compile & run cpp file?<br/>
 1) Setup g++<br/>
 sudo apt-get update<br/>
 sudo apt-get install g++<br/>
@@ -13,3 +13,6 @@ sudo apt-get install g++<br/>
 g++ main.cpp -o setup<br/>
 3) Run it<br/>
 ./setup<br/>
+
+<hr/>
+Copyright 2020 0rbianta
