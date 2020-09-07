@@ -18,4 +18,4 @@ Tor should not be blocked in your country.<br/>
 By using this software, you agree that all responsibility is yours.<br/>
 <hr/>
 <br/>
-Copyright 2020 0rbianta
+<h3>Copyright 2020 0rbianta</h3>
