@@ -1,4 +1,4 @@
-# Setup Tor To Linux<br/>
+# Setup Tor Browser To Linux<br/>
 Setup Tor Browser to Linux fast and easier.<br/>
 <br/>
 # Requirements<br/>
