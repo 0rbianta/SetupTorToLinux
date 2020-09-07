@@ -13,6 +13,8 @@ sudo apt-get install g++<br/>
 g++ main.cpp -o setup<br/>
 3) Run it<br/>
 ./setup<br/>
-
+# Warning!<br/>
+Tor should not be blocked in your country.<br/>
 <hr/>
+<br/>
 Copyright 2020 0rbianta
