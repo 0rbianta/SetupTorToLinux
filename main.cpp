@@ -49,12 +49,15 @@ void select_operation(){
 void remove(){
     system("clear");
     
+    /*
     system("rm -rf ~/.tor");
     cout << "Tor Browser removed from your system." << endl;
+    */
     
-    /*
+    string linux_home = getenv("HOME");
+    
     fstream ffile;
-    ffile.open("~/.tor/Browser/start-tor-browser.desktop");
+    ffile.open(linux_home+"/.tor/Browser/libnssdbm3.so");
     if(ffile.fail()) {
         cout << "Tor Browser not found in ~/.tor" << endl << "Please check your filesystem and make sure you don't renamed your .tor directory in your home(/home/username = ~/)" << endl << "Exiting..." << endl;
     }else{
@@ -62,15 +65,28 @@ void remove(){
         cout << "Tor Browser removed from your system." << endl;
     }
     
-    */
     
 }
 
 
 void setup(){
+    string linux_home = getenv("HOME");
+    
+    fstream ffile;
+    ffile.open(linux_home+"/.tor/Browser/libnssdbm3.so");
+    if(ffile.fail()){}else{
+        cout << "Tor has already been installed on your system." << endl << "You can run remove function." << endl << "Exiting..." << endl;
+        exit(0);
+    }
+    
     system("clear");
     cout << "Tor Setup Tool by 0rbianta" << endl;
     system("wget https://dist.torproject.org/torbrowser/9.5.4/tor-browser-linux64-9.5.4_en-US.tar.xz");
+    ffile.open("tor-browser-linux64-9.5.4_en-US.tar.xz");
+    if(ffile.fail()) {
+        cout << "Tor Browser is blocked in your country." << endl << "Exiting..." << endl;
+        exit(0);
+    }
     cout << "Tor Browser files downloaded from https://dist.torproject.org/torbrowser/9.5.4/tor-browser-linux64-9.5.4_en-US.tar.xz" << endl;
     system("clear");
     cout << "Decompressing setup files..." << endl;
